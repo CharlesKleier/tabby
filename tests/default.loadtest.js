@@ -31,3 +31,12 @@ export default () => {
   check(res, { success: (r) => r.status === 200 });
   sleep(0.5);
 };
+
+describe("HomePage component", () => {
+  test("Title Renders", () => {
+    const screen = render(<AuthProvider><HomePage /></AuthProvider>, {wrapper: BrowserRouter});
+    //view rendered DOM/HTML in console (for debugging)
+    expect(screen.getByText("Tabby")).toBeInTheDocument(); //assertion
+
+  })
+})
