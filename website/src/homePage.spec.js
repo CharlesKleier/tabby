@@ -3,8 +3,6 @@ import React from 'react';
 import "@testing-library/jest-dom"
 import { render, screen } from '@testing-library/react';
 import HomepageFeatures from './components/HomepageFeatures';
-import index from '.\components\HomepageFeatures\index'
-import userEvent from '@testing-library/user-event';
 
 
 
